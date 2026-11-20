@@ -1,0 +1,32 @@
+# One command brings up the whole stack (API + web UI + GPU models):   docker compose up -d --build
+# Then open http://127.0.0.1:8000.  First start downloads ~10 GB of model weights into the `hf` volume
+# (watch with `docker compose logs -f`); the UI is usable once /api/health reports device "cuda".
+# Needs: NVIDIA driver >= 580 (CUDA 13) + NVIDIA container toolkit.
+services:
+  structsync:
+    build: .
+    image: structsync:latest
+    restart: unless-stopped
+    ports:
+      - "${BIND:-127.0.0.1}:${PORT:-8000}:8000"   # BIND=0.0.0.0 to expose on the network — then set STRUCTSYNC_TOKEN
+    environment:
+      STRUCTSYNC_TOKEN: ${STRUCTSYNC_TOKEN:-}
+      STRUCTSYNC_PRELOAD: "1"
+      STRUCTSYNC_SCENES: "2"
+    volumes:
+      - data:/data                # projects, photos, renders
+      - catalog:/app/catalog      # materials (seeded from the image on first start)
+      - hf:/hf                    # model weights (downloaded once)
+    healthcheck:
+      start_period: 900s          # first start downloads the weights
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: 1
+              capabilities: [gpu]
+volumes:
+  data:
+  catalog:
+  hf:

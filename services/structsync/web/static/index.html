@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>StructuralSync — kitchen finish studio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="brand"><span class="brand-mark"></span>StructuralSync</div>
+    <nav>
+      <button data-view="projects" class="active">Projects</button>
+      <button data-view="catalog">Catalogue</button>
+    </nav>
+    <div class="status" id="status"><span class="dot"></span><span>connecting…</span></div>
+  </header>
+  <main id="view"></main>
+
+  <dialog id="sku-dialog">
+    <form method="dialog" id="sku-form">
+      <div class="full"><h2 id="sku-title">Add material</h2>
+        <p class="muted" style="margin:0">Texture must be a seamless tile; tile size is the real-world area one tile covers.</p></div>
+      <label class="field">SKU id<input type="text" name="id" required pattern="[A-Za-z0-9][A-Za-z0-9-]{1,31}" placeholder="CT-QTZ-05"></label>
+      <label class="field">Category<select name="category" id="sku-category"></select></label>
+      <label class="field full">Product name<input type="text" name="name" required maxlength="80" placeholder="Carrara Quartz"></label>
+      <label class="field">Vendor<input type="text" name="vendor" maxlength="60"></label>
+      <label class="field">Price per m²<input type="number" name="price" min="0" step="0.01" required></label>
+      <label class="field">Tile width (m)<input type="number" name="tile_w" min="0.01" max="20" step="0.01" required value="0.6"></label>
+      <label class="field">Tile height (m)<input type="number" name="tile_h" min="0.01" max="20" step="0.01" required value="0.6"></label>
+      <label class="field full">Gloss <span id="gloss-val">0.30</span><input type="range" name="gloss" min="0" max="1" step="0.05" value="0.3"></label>
+      <label class="field full"><span id="tex-label">Texture (PNG/JPG, seamless)</span><input type="file" name="albedo" accept="image/*"></label>
+      <div class="preview full" id="tex-preview"></div>
+      <p class="full muted" id="maps-label" style="margin:0;font-size:12px"></p>
+      <label class="field">Normal map (OpenGL)<input type="file" name="normal" accept="image/*"></label>
+      <label class="field">Roughness map<input type="file" name="roughness" accept="image/*"></label>
+      <div class="row full" style="justify-content:flex-end">
+        <button class="btn" value="cancel" formnovalidate>Cancel</button>
+        <button class="btn primary" id="sku-save" value="save">Save material</button>
+      </div>
+    </form>
+  </dialog>
+  <dialog id="import-dialog">
+    <form method="dialog" id="import-form">
+      <div class="full"><h2>Import catalogue</h2>
+        <p class="muted" style="margin:0">One ZIP with <code>catalog.json</code> or <code>catalog.csv</code> and
+          <code>&lt;id&gt;/albedo.png</code> (optional <code>normal.png</code>, <code>roughness.png</code>).
+          Use <a href="#" id="tpl-link">Export</a> to get the exact format. Nothing changes until you confirm.</p></div>
+      <label class="field full">ZIP file<input type="file" name="archive" accept=".zip,application/zip" required></label>
+      <div class="full row">
+        <label class="row" style="gap:6px"><input type="radio" name="mode" value="merge" checked> Add &amp; update
+          <span class="muted">(keep everything else)</span></label>
+        <label class="row" style="gap:6px"><input type="radio" name="mode" value="replace"> Replace entire catalogue</label>
+      </div>
+      <div class="full" id="import-result"></div>
+      <div class="row full" style="justify-content:flex-end">
+        <button class="btn" value="cancel" formnovalidate>Close</button>
+        <button class="btn" id="import-check">Check file</button>
+        <button class="btn primary" id="import-apply" disabled>Import</button>
+      </div>
+    </form>
+  </dialog>
+  <div class="toasts" id="toasts" role="status" aria-live="polite"></div>
+  <script src="app.js"></script>
+</body>
+</html>

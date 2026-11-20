@@ -1,0 +1,28 @@
+[project]
+name = "structsync"
+version = "0.2.0"
+description = "Single photo + fixed catalogue → kitchen finish swap (prototype)"
+requires-python = ">=3.12"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"
+filterwarnings = ["ignore::DeprecationWarning:torch.*", "ignore::FutureWarning"]
+
+[tool.ruff]
+line-length = 120
+target-version = "py312"
+extend-exclude = [".venv", "data", "outputs"]
+
+[tool.ruff.lint]
+# pyflakes, pycodestyle, import order, bugbear, pyupgrade, logging-format
+select = ["F", "E", "W", "I", "B", "UP", "G"]
+ignore = [
+  "E741",   # short math names (l, I) are deliberate in the geometry code
+  "B008",   # FastAPI's File()/Form()/Depends() defaults are the framework's idiom
+  "B905",   # zip() without strict= — lengths are equal by construction
+]
+
+[tool.ruff.lint.per-file-ignores]
+"tests/*" = ["E402"]
+"smoke_test.py" = ["E402"]

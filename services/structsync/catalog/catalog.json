@@ -1,0 +1,502 @@
+[
+  {
+    "id": "CT-CAL-01",
+    "name": "Calacatta White Quartz",
+    "category": "countertop",
+    "vendor": "StoneCo",
+    "price": 420,
+    "tile_w": 1.6,
+    "tile_h": 1.6,
+    "gloss": 0.6
+  },
+  {
+    "id": "CT-NER-02",
+    "name": "Nero Marquina Marble",
+    "category": "countertop",
+    "vendor": "StoneCo",
+    "price": 510,
+    "tile_w": 1.6,
+    "tile_h": 1.6,
+    "gloss": 0.7
+  },
+  {
+    "id": "CT-GRA-03",
+    "name": "Absolute Grey Granite",
+    "category": "countertop",
+    "vendor": "StoneCo",
+    "price": 290,
+    "tile_w": 0.6,
+    "tile_h": 0.6,
+    "gloss": 0.5
+  },
+  {
+    "id": "CT-OAK-04",
+    "name": "Oak Butcher Block",
+    "category": "countertop",
+    "vendor": "TimberWorks",
+    "price": 260,
+    "tile_w": 1.2,
+    "tile_h": 1.2,
+    "gloss": 0.2
+  },
+  {
+    "id": "CB-NAV-01",
+    "name": "Navy Satin Paint",
+    "category": "cabinet",
+    "vendor": "PaintLab",
+    "price": 45,
+    "tile_w": 0.5,
+    "tile_h": 0.5,
+    "gloss": 0.3
+  },
+  {
+    "id": "CB-SAG-02",
+    "name": "Sage Green Matte",
+    "category": "cabinet",
+    "vendor": "PaintLab",
+    "price": 45,
+    "tile_w": 0.5,
+    "tile_h": 0.5,
+    "gloss": 0.1
+  },
+  {
+    "id": "CB-WHT-03",
+    "name": "Pure White Gloss",
+    "category": "cabinet",
+    "vendor": "PaintLab",
+    "price": 50,
+    "tile_w": 0.5,
+    "tile_h": 0.5,
+    "gloss": 0.6
+  },
+  {
+    "id": "CB-WAL-04",
+    "name": "Walnut Veneer",
+    "category": "cabinet",
+    "vendor": "TimberWorks",
+    "price": 180,
+    "tile_w": 0.8,
+    "tile_h": 0.8,
+    "gloss": 0.25
+  },
+  {
+    "id": "BS-SUB-01",
+    "name": "White Subway Tile 7.5x15",
+    "category": "backsplash",
+    "vendor": "TileHouse",
+    "price": 60,
+    "tile_w": 0.3,
+    "tile_h": 0.3,
+    "gloss": 0.7
+  },
+  {
+    "id": "BS-GRN-02",
+    "name": "Emerald Subway Tile",
+    "category": "backsplash",
+    "vendor": "TileHouse",
+    "price": 85,
+    "tile_w": 0.3,
+    "tile_h": 0.3,
+    "gloss": 0.8
+  },
+  {
+    "id": "FL-OAK-01",
+    "name": "Light Oak Plank Floor",
+    "category": "floor",
+    "vendor": "TimberWorks",
+    "price": 70,
+    "tile_w": 1.0,
+    "tile_h": 1.0,
+    "gloss": 0.2
+  },
+  {
+    "id": "WL-GRG-01",
+    "name": "Greige Wall Paint",
+    "category": "wall",
+    "vendor": "PaintLab",
+    "price": 12,
+    "tile_w": 0.5,
+    "tile_h": 0.5,
+    "gloss": 0.05
+  },
+  {
+    "id": "CT-CAR-05",
+    "name": "Carrara White Marble",
+    "category": "countertop",
+    "vendor": "StoneCo",
+    "price": 480.0,
+    "tile_w": 1.6,
+    "tile_h": 1.6,
+    "gloss": 0.67
+  },
+  {
+    "id": "CT-CRE-06",
+    "name": "Crema Marfil Marble",
+    "category": "countertop",
+    "vendor": "StoneCo",
+    "price": 450.0,
+    "tile_w": 1.6,
+    "tile_h": 1.6,
+    "gloss": 0.7
+  },
+  {
+    "id": "CT-CHA-07",
+    "name": "Charcoal Veined Quartz",
+    "category": "countertop",
+    "vendor": "StoneCo",
+    "price": 395.0,
+    "tile_w": 1.6,
+    "tile_h": 1.6,
+    "gloss": 0.67
+  },
+  {
+    "id": "CT-TPE-08",
+    "name": "Taupe Limestone",
+    "category": "countertop",
+    "vendor": "StoneCo",
+    "price": 340.0,
+    "tile_w": 1.6,
+    "tile_h": 1.6,
+    "gloss": 0.7
+  },
+  {
+    "id": "CT-BLU-09",
+    "name": "Blue Grey Marble",
+    "category": "countertop",
+    "vendor": "StoneCo",
+    "price": 520.0,
+    "tile_w": 1.6,
+    "tile_h": 1.6,
+    "gloss": 0.7
+  },
+  {
+    "id": "CT-WAV-10",
+    "name": "Silver Wave Travertine",
+    "category": "countertop",
+    "vendor": "StoneCo",
+    "price": 560.0,
+    "tile_w": 1.6,
+    "tile_h": 1.6,
+    "gloss": 0.7
+  },
+  {
+    "id": "CT-SAL-11",
+    "name": "Salt & Pepper Granite",
+    "category": "countertop",
+    "vendor": "StoneCo",
+    "price": 260.0,
+    "tile_w": 0.6,
+    "tile_h": 0.6,
+    "gloss": 0.7
+  },
+  {
+    "id": "CT-DGO-12",
+    "name": "Desert Gold Granite",
+    "category": "countertop",
+    "vendor": "StoneCo",
+    "price": 285.0,
+    "tile_w": 0.6,
+    "tile_h": 0.6,
+    "gloss": 0.7
+  },
+  {
+    "id": "CT-TZ1-13",
+    "name": "Blush Terrazzo",
+    "category": "countertop",
+    "vendor": "TerraForm",
+    "price": 430.0,
+    "tile_w": 1.2,
+    "tile_h": 1.2,
+    "gloss": 0.55
+  },
+  {
+    "id": "CT-TZ2-14",
+    "name": "Mosaic Terrazzo",
+    "category": "countertop",
+    "vendor": "TerraForm",
+    "price": 460.0,
+    "tile_w": 1.2,
+    "tile_h": 1.2,
+    "gloss": 0.42
+  },
+  {
+    "id": "CT-TZ3-15",
+    "name": "Speckle Terrazzo",
+    "category": "countertop",
+    "vendor": "TerraForm",
+    "price": 410.0,
+    "tile_w": 1.2,
+    "tile_h": 1.2,
+    "gloss": 0.52
+  },
+  {
+    "id": "CT-CON-16",
+    "name": "Polished Concrete",
+    "category": "countertop",
+    "vendor": "TerraForm",
+    "price": 300.0,
+    "tile_w": 1.5,
+    "tile_h": 1.5,
+    "gloss": 0.27
+  },
+  {
+    "id": "CB-WAL-05",
+    "name": "Dark Walnut Veneer",
+    "category": "cabinet",
+    "vendor": "TimberWorks",
+    "price": 195.0,
+    "tile_w": 0.8,
+    "tile_h": 0.8,
+    "gloss": 0.3
+  },
+  {
+    "id": "CB-EBO-06",
+    "name": "Espresso Oak Veneer",
+    "category": "cabinet",
+    "vendor": "TimberWorks",
+    "price": 185.0,
+    "tile_w": 0.8,
+    "tile_h": 0.8,
+    "gloss": 0.3
+  },
+  {
+    "id": "CB-SMK-07",
+    "name": "Smoked Oak Veneer",
+    "category": "cabinet",
+    "vendor": "TimberWorks",
+    "price": 175.0,
+    "tile_w": 0.8,
+    "tile_h": 0.8,
+    "gloss": 0.25
+  },
+  {
+    "id": "CB-DRF-08",
+    "name": "Driftwood Veneer",
+    "category": "cabinet",
+    "vendor": "TimberWorks",
+    "price": 170.0,
+    "tile_w": 0.8,
+    "tile_h": 0.8,
+    "gloss": 0.28
+  },
+  {
+    "id": "CB-NAT-09",
+    "name": "Natural Beech Veneer",
+    "category": "cabinet",
+    "vendor": "TimberWorks",
+    "price": 150.0,
+    "tile_w": 0.8,
+    "tile_h": 0.8,
+    "gloss": 0.23
+  },
+  {
+    "id": "CB-MAP-10",
+    "name": "Soft Maple Veneer",
+    "category": "cabinet",
+    "vendor": "TimberWorks",
+    "price": 150.0,
+    "tile_w": 0.8,
+    "tile_h": 0.8,
+    "gloss": 0.29
+  },
+  {
+    "id": "CB-HON-11",
+    "name": "Honey Cherry Veneer",
+    "category": "cabinet",
+    "vendor": "TimberWorks",
+    "price": 165.0,
+    "tile_w": 0.8,
+    "tile_h": 0.8,
+    "gloss": 0.3
+  },
+  {
+    "id": "BS-WGR-03",
+    "name": "White Grid Mosaic",
+    "category": "backsplash",
+    "vendor": "TileHouse",
+    "price": 70.0,
+    "tile_w": 0.5,
+    "tile_h": 0.5,
+    "gloss": 0.74
+  },
+  {
+    "id": "BS-ICE-04",
+    "name": "Ice Blue Glass Mosaic",
+    "category": "backsplash",
+    "vendor": "TileHouse",
+    "price": 110.0,
+    "tile_w": 0.4,
+    "tile_h": 0.4,
+    "gloss": 0.53
+  },
+  {
+    "id": "BS-LIM-05",
+    "name": "Limestone Square Tile",
+    "category": "backsplash",
+    "vendor": "TileHouse",
+    "price": 90.0,
+    "tile_w": 0.6,
+    "tile_h": 0.6,
+    "gloss": 0.27
+  },
+  {
+    "id": "BS-SND-06",
+    "name": "Sand Travertine Tile",
+    "category": "backsplash",
+    "vendor": "TileHouse",
+    "price": 95.0,
+    "tile_w": 0.6,
+    "tile_h": 0.6,
+    "gloss": 0.27
+  },
+  {
+    "id": "BS-SLT-07",
+    "name": "Black Slate Tile",
+    "category": "backsplash",
+    "vendor": "TileHouse",
+    "price": 100.0,
+    "tile_w": 0.8,
+    "tile_h": 0.8,
+    "gloss": 0.38
+  },
+  {
+    "id": "FL-BLN-02",
+    "name": "Blonde Maple Strip Floor",
+    "category": "floor",
+    "vendor": "TimberWorks",
+    "price": 85.0,
+    "tile_w": 1.0,
+    "tile_h": 1.0,
+    "gloss": 0.2
+  },
+  {
+    "id": "FL-AMB-03",
+    "name": "Amber Parquet Floor",
+    "category": "floor",
+    "vendor": "TimberWorks",
+    "price": 95.0,
+    "tile_w": 1.0,
+    "tile_h": 1.0,
+    "gloss": 0.3
+  },
+  {
+    "id": "FL-NAT-04",
+    "name": "Natural Plank Floor",
+    "category": "floor",
+    "vendor": "TimberWorks",
+    "price": 78.0,
+    "tile_w": 1.0,
+    "tile_h": 1.0,
+    "gloss": 0.2
+  },
+  {
+    "id": "FL-RUS-05",
+    "name": "Rustic Knotty Plank Floor",
+    "category": "floor",
+    "vendor": "TimberWorks",
+    "price": 88.0,
+    "tile_w": 1.2,
+    "tile_h": 1.2,
+    "gloss": 0.3
+  },
+  {
+    "id": "FL-SMK-06",
+    "name": "Smoked Reclaimed Floor",
+    "category": "floor",
+    "vendor": "TimberWorks",
+    "price": 99.0,
+    "tile_w": 1.2,
+    "tile_h": 1.2,
+    "gloss": 0.2
+  },
+  {
+    "id": "FL-WLN-07",
+    "name": "Walnut Wide Plank Floor",
+    "category": "floor",
+    "vendor": "TimberWorks",
+    "price": 120.0,
+    "tile_w": 1.2,
+    "tile_h": 1.2,
+    "gloss": 0.3
+  },
+  {
+    "id": "FL-CHK-08",
+    "name": "Marble Checkerboard Floor",
+    "category": "floor",
+    "vendor": "StoneCo",
+    "price": 130.0,
+    "tile_w": 1.2,
+    "tile_h": 1.2,
+    "gloss": 0.3
+  },
+  {
+    "id": "FL-CON-09",
+    "name": "Charcoal Microcement Floor",
+    "category": "floor",
+    "vendor": "TerraForm",
+    "price": 110.0,
+    "tile_w": 1.5,
+    "tile_h": 1.5,
+    "gloss": 0.14
+  },
+  {
+    "id": "WL-ALM-02",
+    "name": "Almond Lime Plaster",
+    "category": "wall",
+    "vendor": "PaintLab",
+    "price": 28.0,
+    "tile_w": 1.0,
+    "tile_h": 1.0,
+    "gloss": 0.08
+  },
+  {
+    "id": "WL-SNW-03",
+    "name": "Snow Venetian Plaster",
+    "category": "wall",
+    "vendor": "PaintLab",
+    "price": 34.0,
+    "tile_w": 1.0,
+    "tile_h": 1.0,
+    "gloss": 0.05
+  },
+  {
+    "id": "WL-STN-04",
+    "name": "Stone Grey Plaster",
+    "category": "wall",
+    "vendor": "PaintLab",
+    "price": 30.0,
+    "tile_w": 1.0,
+    "tile_h": 1.0,
+    "gloss": 0.08
+  },
+  {
+    "id": "CL-WHT-01",
+    "name": "Flat White Ceiling",
+    "category": "ceiling",
+    "vendor": "PaintLab",
+    "price": 10,
+    "tile_w": 2.0,
+    "tile_h": 2.0,
+    "gloss": 0.02
+  },
+  {
+    "id": "CL-OAK-02",
+    "name": "White Oak Plank Ceiling",
+    "category": "ceiling",
+    "vendor": "TimberWorks",
+    "price": 85,
+    "tile_w": 1.2,
+    "tile_h": 1.2,
+    "gloss": 0.15
+  },
+  {
+    "id": "CL-ACO-03",
+    "name": "Acoustic Tile 600",
+    "category": "ceiling",
+    "vendor": "TileHouse",
+    "price": 35,
+    "tile_w": 1.2,
+    "tile_h": 1.2,
+    "gloss": 0.05
+  }
+]

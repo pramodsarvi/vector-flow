@@ -1,0 +1,19 @@
+# environments / caches
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+.DS_Store
+
+# runtime data (projects, uploads, renders) — lives in STRUCTSYNC_DATA
+data/
+
+# generated outputs (eval grids, comparison images) — reproducible with eval.py
+outputs/
+
+# derived cache, rebuilt automatically when the catalogue changes
+catalog/siglip_embeddings.npy
+
+# local config
+.env

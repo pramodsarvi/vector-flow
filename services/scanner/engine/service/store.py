@@ -61,7 +61,7 @@ class ScanNotFound(Exception):
 
 
 def utcnow() -> str:
-    return datetime.now(UTC).isoformat(timespec="seconds")
+    return datetime.now(UTC).isoformat(timespec="microseconds")
 
 
 def new_scan_id() -> str:

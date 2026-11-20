@@ -1,0 +1,152 @@
+[
+  {
+    "id": "CT-CAL-01",
+    "name": "Calacatta White Quartz",
+    "category": "countertop",
+    "vendor": "StoneCo",
+    "price": 420,
+    "tile_w": 1.6,
+    "tile_h": 1.6,
+    "gloss": 0.6
+  },
+  {
+    "id": "CT-NER-02",
+    "name": "Nero Marquina Marble",
+    "category": "countertop",
+    "vendor": "StoneCo",
+    "price": 510,
+    "tile_w": 1.6,
+    "tile_h": 1.6,
+    "gloss": 0.7
+  },
+  {
+    "id": "CT-GRA-03",
+    "name": "Absolute Grey Granite",
+    "category": "countertop",
+    "vendor": "StoneCo",
+    "price": 290,
+    "tile_w": 0.6,
+    "tile_h": 0.6,
+    "gloss": 0.5
+  },
+  {
+    "id": "CT-OAK-04",
+    "name": "Oak Butcher Block",
+    "category": "countertop",
+    "vendor": "TimberWorks",
+    "price": 260,
+    "tile_w": 1.2,
+    "tile_h": 1.2,
+    "gloss": 0.2
+  },
+  {
+    "id": "CB-NAV-01",
+    "name": "Navy Satin Paint",
+    "category": "cabinet",
+    "vendor": "PaintLab",
+    "price": 45,
+    "tile_w": 0.5,
+    "tile_h": 0.5,
+    "gloss": 0.3
+  },
+  {
+    "id": "CB-SAG-02",
+    "name": "Sage Green Matte",
+    "category": "cabinet",
+    "vendor": "PaintLab",
+    "price": 45,
+    "tile_w": 0.5,
+    "tile_h": 0.5,
+    "gloss": 0.1
+  },
+  {
+    "id": "CB-WHT-03",
+    "name": "Pure White Gloss",
+    "category": "cabinet",
+    "vendor": "PaintLab",
+    "price": 50,
+    "tile_w": 0.5,
+    "tile_h": 0.5,
+    "gloss": 0.6
+  },
+  {
+    "id": "CB-WAL-04",
+    "name": "Walnut Veneer",
+    "category": "cabinet",
+    "vendor": "TimberWorks",
+    "price": 180,
+    "tile_w": 0.8,
+    "tile_h": 0.8,
+    "gloss": 0.25
+  },
+  {
+    "id": "BS-SUB-01",
+    "name": "White Subway Tile 7.5x15",
+    "category": "backsplash",
+    "vendor": "TileHouse",
+    "price": 60,
+    "tile_w": 0.3,
+    "tile_h": 0.3,
+    "gloss": 0.7
+  },
+  {
+    "id": "BS-GRN-02",
+    "name": "Emerald Subway Tile",
+    "category": "backsplash",
+    "vendor": "TileHouse",
+    "price": 85,
+    "tile_w": 0.3,
+    "tile_h": 0.3,
+    "gloss": 0.8
+  },
+  {
+    "id": "FL-OAK-01",
+    "name": "Light Oak Plank Floor",
+    "category": "floor",
+    "vendor": "TimberWorks",
+    "price": 70,
+    "tile_w": 1.0,
+    "tile_h": 1.0,
+    "gloss": 0.2
+  },
+  {
+    "id": "WL-GRG-01",
+    "name": "Greige Wall Paint",
+    "category": "wall",
+    "vendor": "PaintLab",
+    "price": 12,
+    "tile_w": 0.5,
+    "tile_h": 0.5,
+    "gloss": 0.05
+  },
+  {
+    "id": "CL-WHT-01",
+    "name": "Flat White Ceiling",
+    "category": "ceiling",
+    "vendor": "PaintLab",
+    "price": 10,
+    "tile_w": 2.0,
+    "tile_h": 2.0,
+    "gloss": 0.02
+  },
+  {
+    "id": "CL-OAK-02",
+    "name": "White Oak Plank Ceiling",
+    "category": "ceiling",
+    "vendor": "TimberWorks",
+    "price": 85,
+    "tile_w": 1.2,
+    "tile_h": 1.2,
+    "gloss": 0.15
+  },
+  {
+    "id": "CL-ACO-03",
+    "name": "Acoustic Tile 600",
+    "category": "ceiling",
+    "vendor": "TileHouse",
+    "price": 35,
+    "tile_w": 1.2,
+    "tile_h": 1.2,
+    "gloss": 0.05
+  }
+]

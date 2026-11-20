@@ -1,0 +1,9 @@
+.venv
+data
+outputs
+__pycache__
+**/__pycache__
+.DS_Store
+**/.DS_Store
+samples
+catalog/siglip_embeddings.npy
