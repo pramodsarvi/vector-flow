@@ -1,0 +1,36 @@
+[project]
+name = "spatial-scanner"
+version = "2.0.0"
+description = "Camera + LiDAR room scanning: vectorized 2D CAD floor designs and an explorable 3D room model"
+requires-python = ">=3.11"
+readme = "README.md"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"
+filterwarnings = [
+  # starlette's TestClient warns about httpx; not actionable from here.
+  "ignore::DeprecationWarning:starlette.*",
+]
+
+[tool.ruff]
+line-length = 120
+target-version = "py311"
+extend-exclude = [".venv", "data", "engine/output", "viewer/vendor", "proto_2"]
+
+[tool.ruff.lint]
+# pyflakes, pycodestyle, import order, bugbear, pyupgrade, logging format
+select = ["F", "E", "W", "I", "B", "UP", "G"]
+ignore = [
+  "E741",  # short math names (l, I) are deliberate in the geometry code
+  "B008",  # FastAPI's File()/Form()/Depends() defaults are the framework idiom
+  "B905",  # zip() without strict= — lengths are equal by construction
+]
+
+[tool.ruff.lint.per-file-ignores]
+"tests/*" = ["E402"]
+# These two predate the lint configuration and build long SVG/DXF literals.
+# Reformatting them is a separate change with its own regression check — this
+# is a scoped exemption, not a general licence to write long lines.
+"engine/export/cad.py" = ["E501"]
+"engine/geometry/vectorize.py" = ["E501"]

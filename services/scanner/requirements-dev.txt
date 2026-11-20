@@ -1,0 +1,7 @@
+# Development dependencies. Install on top of requirements.txt:
+#   uv pip install -p .venv/bin/python -r requirements-dev.txt
+-r requirements.txt
+
+pytest==9.2.0
+httpx==0.28.1                 # required by fastapi.testclient
+ruff==0.17.5                  # linting; configuration lives in pyproject.toml

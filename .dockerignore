@@ -1,0 +1,23 @@
+# Keep the build context small and reproducible: never ship a host virtualenv,
+# a developer's scans, or caches into an image.
+**/.venv/
+**/__pycache__/
+**/*.py[cod]
+**/.pytest_cache/
+**/.ruff_cache/
+**/.git/
+**/.env
+
+# Runtime data and generated artifacts
+data/
+**/data/
+services/scanner/engine/output/
+services/structsync/outputs/
+services/structsync/data/
+
+# Not needed at runtime
+docs/
+services/scanner/tests/
+services/structsync/
+deploy/
+*.md

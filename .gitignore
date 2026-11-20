@@ -1,0 +1,25 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+*.egg-info/
+
+# Tooling caches
+.pytest_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Runtime data: scans and projects are user content, not source
+data/
+services/scanner/engine/output/
+services/structsync/data/
+services/structsync/outputs/
+
+# Local configuration
+.env
+deploy/.env
+
+# OS noise
+.DS_Store
+Thumbs.db

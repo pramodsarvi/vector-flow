@@ -1,0 +1,72 @@
+# Deployment for the repository's services.
+#
+#   docker compose -f deploy/docker-compose.yml up -d --build          scanner only (CPU)
+#   docker compose -f deploy/docker-compose.yml --profile gpu up -d    + StructuralSync (needs an NVIDIA GPU)
+#
+# Run from the repository root: the scanner's build context is the root, so one
+# image can pick up the service, the viewer and the bundled sample scan.
+# Copy deploy/.env.example to deploy/.env to set ports, bind address and tokens.
+
+name: spatial-scanner
+
+services:
+  scanner:
+    build:
+      context: ..
+      dockerfile: deploy/scanner/Dockerfile
+    image: spatial-scanner:latest
+    restart: unless-stopped
+    ports:
+      # Localhost by default. BIND=0.0.0.0 exposes it on the network — set
+      # SCANNER_TOKEN first, or the API is open to anyone who can reach the port.
+      - "${BIND:-127.0.0.1}:${SCANNER_PORT:-8765}:8765"
+    environment:
+      SCANNER_TOKEN: ${SCANNER_TOKEN:-}
+      SCANNER_LOG: ${SCANNER_LOG:-INFO}
+      SCANNER_MAX_UPLOAD_MB: ${SCANNER_MAX_UPLOAD_MB:-512}
+      SCANNER_MAX_SCANS: ${SCANNER_MAX_SCANS:-50}
+    volumes:
+      # Scans outlive the container; everything else is rebuilt from the image.
+      - scanner-data:/data
+    healthcheck:
+      test: ["CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://127.0.0.1:8765/api/config', timeout=4)"]
+      interval: 30s
+      timeout: 5s
+      start_period: 20s
+      retries: 3
+
+  # Opt-in: this image is ~10 GB and needs an NVIDIA GPU plus the container
+  # toolkit. It is a separate product with its own build, kept here so the whole
+  # repository can be brought up with one command when the hardware allows.
+  structsync:
+    profiles: ["gpu"]
+    build:
+      context: ../services/structsync
+      dockerfile: Dockerfile
+    image: structsync:latest
+    restart: unless-stopped
+    ports:
+      - "${BIND:-127.0.0.1}:${STRUCTSYNC_PORT:-8000}:8000"
+    environment:
+      STRUCTSYNC_TOKEN: ${STRUCTSYNC_TOKEN:-}
+      STRUCTSYNC_PRELOAD: "1"
+      STRUCTSYNC_SCENES: "2"
+    volumes:
+      - structsync-data:/data
+      - structsync-catalog:/app/catalog
+      - structsync-hf:/hf          # model weights, downloaded once
+    healthcheck:
+      start_period: 900s           # the first start downloads the weights
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: 1
+              capabilities: [gpu]
+
+volumes:
+  scanner-data:
+  structsync-data:
+  structsync-catalog:
+  structsync-hf:

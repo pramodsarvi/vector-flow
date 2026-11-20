@@ -1,0 +1,289 @@
+{
+  "session_id": "synthetic_demo_01",
+  "sensor_type": "RGB_Camera_Plus_LiDAR",
+  "point_count": 38156,
+  "ground_truth_dimensions": {
+    "length_m": 6.0,
+    "width_m": 4.5,
+    "height_m": 2.8,
+    "area_sqm": 27.0
+  },
+  "frames": [
+    {
+      "frame_id": 0,
+      "image_file": "images/frame_0000.jpg",
+      "timestamp": 1700000000.0,
+      "camera_position": [
+        4.35,
+        1.6,
+        2.25
+      ],
+      "camera_orientation_yaw_pitch_roll": [
+        90.0,
+        -5.7,
+        0.0
+      ],
+      "intrinsics": {
+        "fx": 525.0,
+        "fy": 525.0,
+        "cx": 320.0,
+        "cy": 240.0,
+        "width": 640,
+        "height": 480
+      }
+    },
+    {
+      "frame_id": 1,
+      "image_file": "images/frame_0001.jpg",
+      "timestamp": 1700000000.5,
+      "camera_position": [
+        4.1691,
+        1.6,
+        2.925
+      ],
+      "camera_orientation_yaw_pitch_roll": [
+        120.0,
+        -5.7,
+        0.0
+      ],
+      "intrinsics": {
+        "fx": 525.0,
+        "fy": 525.0,
+        "cx": 320.0,
+        "cy": 240.0,
+        "width": 640,
+        "height": 480
+      }
+    },
+    {
+      "frame_id": 2,
+      "image_file": "images/frame_0002.jpg",
+      "timestamp": 1700000001.0,
+      "camera_position": [
+        3.675,
+        1.6,
+        3.4191
+      ],
+      "camera_orientation_yaw_pitch_roll": [
+        150.0,
+        -5.7,
+        0.0
+      ],
+      "intrinsics": {
+        "fx": 525.0,
+        "fy": 525.0,
+        "cx": 320.0,
+        "cy": 240.0,
+        "width": 640,
+        "height": 480
+      }
+    },
+    {
+      "frame_id": 3,
+      "image_file": "images/frame_0003.jpg",
+      "timestamp": 1700000001.5,
+      "camera_position": [
+        3.0,
+        1.6,
+        3.6
+      ],
+      "camera_orientation_yaw_pitch_roll": [
+        180.0,
+        -5.7,
+        0.0
+      ],
+      "intrinsics": {
+        "fx": 525.0,
+        "fy": 525.0,
+        "cx": 320.0,
+        "cy": 240.0,
+        "width": 640,
+        "height": 480
+      }
+    },
+    {
+      "frame_id": 4,
+      "image_file": "images/frame_0004.jpg",
+      "timestamp": 1700000002.0,
+      "camera_position": [
+        2.325,
+        1.6,
+        3.4191
+      ],
+      "camera_orientation_yaw_pitch_roll": [
+        210.0,
+        -5.7,
+        0.0
+      ],
+      "intrinsics": {
+        "fx": 525.0,
+        "fy": 525.0,
+        "cx": 320.0,
+        "cy": 240.0,
+        "width": 640,
+        "height": 480
+      }
+    },
+    {
+      "frame_id": 5,
+      "image_file": "images/frame_0005.jpg",
+      "timestamp": 1700000002.5,
+      "camera_position": [
+        1.8309,
+        1.6,
+        2.925
+      ],
+      "camera_orientation_yaw_pitch_roll": [
+        240.0,
+        -5.7,
+        0.0
+      ],
+      "intrinsics": {
+        "fx": 525.0,
+        "fy": 525.0,
+        "cx": 320.0,
+        "cy": 240.0,
+        "width": 640,
+        "height": 480
+      }
+    },
+    {
+      "frame_id": 6,
+      "image_file": "images/frame_0006.jpg",
+      "timestamp": 1700000003.0,
+      "camera_position": [
+        1.65,
+        1.6,
+        2.25
+      ],
+      "camera_orientation_yaw_pitch_roll": [
+        270.0,
+        -5.7,
+        0.0
+      ],
+      "intrinsics": {
+        "fx": 525.0,
+        "fy": 525.0,
+        "cx": 320.0,
+        "cy": 240.0,
+        "width": 640,
+        "height": 480
+      }
+    },
+    {
+      "frame_id": 7,
+      "image_file": "images/frame_0007.jpg",
+      "timestamp": 1700000003.5,
+      "camera_position": [
+        1.8309,
+        1.6,
+        1.575
+      ],
+      "camera_orientation_yaw_pitch_roll": [
+        300.0,
+        -5.7,
+        0.0
+      ],
+      "intrinsics": {
+        "fx": 525.0,
+        "fy": 525.0,
+        "cx": 320.0,
+        "cy": 240.0,
+        "width": 640,
+        "height": 480
+      }
+    },
+    {
+      "frame_id": 8,
+      "image_file": "images/frame_0008.jpg",
+      "timestamp": 1700000004.0,
+      "camera_position": [
+        2.325,
+        1.6,
+        1.0809
+      ],
+      "camera_orientation_yaw_pitch_roll": [
+        330.0,
+        -5.7,
+        0.0
+      ],
+      "intrinsics": {
+        "fx": 525.0,
+        "fy": 525.0,
+        "cx": 320.0,
+        "cy": 240.0,
+        "width": 640,
+        "height": 480
+      }
+    },
+    {
+      "frame_id": 9,
+      "image_file": "images/frame_0009.jpg",
+      "timestamp": 1700000004.5,
+      "camera_position": [
+        3.0,
+        1.6,
+        0.9
+      ],
+      "camera_orientation_yaw_pitch_roll": [
+        360.0,
+        -5.7,
+        0.0
+      ],
+      "intrinsics": {
+        "fx": 525.0,
+        "fy": 525.0,
+        "cx": 320.0,
+        "cy": 240.0,
+        "width": 640,
+        "height": 480
+      }
+    },
+    {
+      "frame_id": 10,
+      "image_file": "images/frame_0010.jpg",
+      "timestamp": 1700000005.0,
+      "camera_position": [
+        3.675,
+        1.6,
+        1.0809
+      ],
+      "camera_orientation_yaw_pitch_roll": [
+        390.0,
+        -5.7,
+        0.0
+      ],
+      "intrinsics": {
+        "fx": 525.0,
+        "fy": 525.0,
+        "cx": 320.0,
+        "cy": 240.0,
+        "width": 640,
+        "height": 480
+      }
+    },
+    {
+      "frame_id": 11,
+      "image_file": "images/frame_0011.jpg",
+      "timestamp": 1700000005.5,
+      "camera_position": [
+        4.1691,
+        1.6,
+        1.575
+      ],
+      "camera_orientation_yaw_pitch_roll": [
+        420.0,
+        -5.7,
+        0.0
+      ],
+      "intrinsics": {
+        "fx": 525.0,
+        "fy": 525.0,
+        "cx": 320.0,
+        "cy": 240.0,
+        "width": 640,
+        "height": 480
+      }
+    }
+  ]
+}
